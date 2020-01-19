@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentBottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bottom_sheet_dialog_fragment"
+    android:elevation="@dimen/margin_five"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:behavior_peekHeight="@dimen/match_constraints"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="@dimen/size_nineteen"
+        android:layout_height="@dimen/size_three"
+        android:layout_marginTop="@dimen/margin_five"
+        android:background="@drawable/bg_line_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textError"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/error_message"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSizeSixteen"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewLine" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_error_image"
+        app:layout_constraintBottom_toTopOf="@id/textError"
+        app:layout_constraintEnd_toEndOf="@id/textError"
+        app:layout_constraintStart_toStartOf="@id/textError" />
+</androidx.constraintlayout.widget.ConstraintLayout>

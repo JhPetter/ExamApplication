@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StepperView">
+        <attr name="selectedColor" format="color" />
+        <attr name="unselectedColor" format="color" />
+        <attr name="iconSelected" format="reference" />
+        <attr name="heightLine" format="dimension" />
+        <attr name="radiusStep" format="dimension" />
+    </declare-styleable>
+</resources>

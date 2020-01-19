@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="match_constraints">0dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="textSizeSixteen">16sp</dimen>
+    <dimen name="size_thirty">30dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="size_three">3dp</dimen>
+    <dimen name="size_nineteen">19dp</dimen>
+    <dimen name="size_seventy">70dp</dimen>
+    <dimen name="size_stepper_circle">24dp</dimen>
+    <dimen name="size_stepper_height">26dp</dimen>
+    <dimen name="textSizeFourteen">14sp</dimen>
+</resources>

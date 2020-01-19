@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.petter.examapplication.components.StepperView
+            android:id="@+id/stepperView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_stepper_circle"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:radiusStep="@dimen/size_stepper_circle"
+            app:selectedColor="@color/colorPrimary"
+            app:unselectedColor="@color/colorGray" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOpenCompass"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/size_seventy"
+            android:background="@drawable/bg_button"
+            android:text="@string/open_compass"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSizeSixteen"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/content_error" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

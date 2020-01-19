@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExamApplication</string>
+    <string name="north">N</string>
+    <string name="south">S</string>
+    <string name="east">E</string>
+    <string name="west">W</string>
+    <string name="open_compass">Open Compass</string>
+    <string name="error_message">If you have any problem, please report the error to the developer.</string>
+</resources>
